@@ -11,7 +11,7 @@ def piglatinize(phrase)
     front_end = word.slice!(0..vowel_index-1)
     word + front_end +"ay"
   end
-  
+  @piglatinized_phrase = word_array.collect { |word| piglatinize(word)}.join(" ")
 end
 
 def to_pig_latin(phrase)
