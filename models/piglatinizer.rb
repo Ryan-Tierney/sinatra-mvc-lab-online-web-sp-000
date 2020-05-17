@@ -1,7 +1,7 @@
 class PigLatinizer
   attr_accessor :piglatinized_phrase
 
-def piglatinize(phrase) 
+def piglatinize(word) 
   if word.downcase.index(/[aeiou]/) == 0
     word + "way"
   else
